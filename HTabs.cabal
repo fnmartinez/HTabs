@@ -1,0 +1,27 @@
+name:           HTabs
+version:        0.1
+cabal-version:  >=1.2
+build-type:     Simple
+author:         facundo
+
+executable HTabs
+  hs-source-dirs:  src
+  main-is:         Main.hs
+  build-depends:   
+                   base >= 4,
+                   haskelldb,
+                   haskelldb-connect-hdbc,
+                   haskelldb-hdbc,
+                   haskelldb-hdbc-sqlite3,
+                   time
+  ghc-options:     -Wall
+  other-modules:   
+                   Model.Provider,
+                   Model.Bill,
+                   Model.Receipt,
+                   Model.Cheque,
+                   Model.CreditNote,
+                   Model.Bank,
+                   Model.Insurance,
+                   Model.Definitions
+
